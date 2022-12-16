@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom'
 import Navlinks from './Navlinks'
 import Categories from './Categories'
 import Carosal from './Carosal'
-import Review from './Review'
+
 import Highlight from './Highlight'
 import Footer from './Footer'
 
