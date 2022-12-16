@@ -9,7 +9,7 @@ import Carosal from './Carosal'
 import Highlight from './Highlight'
 import Footer from './Footer'
 
-import search from '../images/search.png'
+
 import profile from '../images/user.png'
 import wishlist from '../images/love.png'
 import bag from '../images/bag.png'
