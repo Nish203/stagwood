@@ -1,6 +1,7 @@
 
 import './App.css';
 import Navbar from './component/Navbar';
+
 import {
   BrowserRouter as Router,
   Switch,
@@ -13,12 +14,14 @@ function App() {
     <section className="h-screen bg-Hero bg-cover font-[Poppins] md:bg-top bg-center">
         <Router>
        <Navbar/>
+      
        
          <Switch>
                
          </Switch>
          
        </Router>
+      
        </section>
        
   );

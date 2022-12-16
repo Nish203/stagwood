@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 //import React from 'react'
-import login from "../images/login.jpg";
+//import login from "../images/login.jpg";
 export default function Login() {
   const [formData, setFormData] = useState({ 
     user: {
@@ -21,7 +21,7 @@ export default function Login() {
   return (
     <div className="grid grid-cols-2 gap-4">
         <div>
-        <img src={login} alt="Image"/>
+        {/* <img src={login} alt="Image"/> */}
         </div>
     <figure className="h-screen flex bg-gray-100">
       <div className="max-w-md m-auto bg-white rounded-lg border border-primaryBorder shadow-default py-10 px-1">

@@ -9,6 +9,7 @@ import Register from './Register.js'
 
 import Highlight from './Highlight'
 import Footer from './Footer'
+import Nav from './Nav'
 
 
 import profile from '../images/user.png'
@@ -137,6 +138,7 @@ const Navbar = () => {
    <Register/>
     <Highlight/>
     <Footer/>
+    <Nav/>
     
     </div>      
   )
