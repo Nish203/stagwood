@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom'
 import Navlinks from './Navlinks'
 import Categories from './Categories'
 import Carosal from './Carosal'
+import Register from './Register.js'
 
 import Highlight from './Highlight'
 import Footer from './Footer'
@@ -46,7 +47,7 @@ const Navbar = () => {
         <div className='flex items-center h-28 w-28 gap-6  md:h-34 w-34 '>
 
                
-                <a href="#" className="  ">
+                <a href="Register.js" className="  ">
                     <img src={profile} ></img>
                 </a>
                 <a href="#" class=" ">
@@ -133,7 +134,7 @@ const Navbar = () => {
     </div>
     <Categories/>
     <Carosal/>
-   
+   <Register/>
     <Highlight/>
     <Footer/>
     
