@@ -9,7 +9,7 @@ const Navlinks = () => {
     <>
      {links.map((link) => (
         <div>
-            <div className='px-3  text-left md:cursor-pointer group'>
+            <div className='px-3  text-left md:cursor-pointer group '>
                 <h1 className='py-7 flex justify-between items-center md:pr-0 pr-5 group' 
                     onClick={()=> heading !== link.name ? setHeading(link.name) : setHeading("")  }>{link.name}
                     <span className="text-xl md:hidden inline">
@@ -22,12 +22,12 @@ const Navlinks = () => {
                     </span>
                 </h1>
                 {link.submenu && (
-                    <div>
-                        <div className='absolute top-20 hidden group-hover:md:block md:hover-block'>
+                    <div >
+                        <div className='absolute top-14 hidden group-hover:md:block md:hover-block '>
                             <div className='py-3'>
                                 <div className='w-4 h-4 left-3 absolute mt-1 bg-slate-50 rotate-45  '></div>
                             </div>
-                            <div className='bg-slate-50 p-5 '  >
+                            <div className='bg-white p-5 '  >
                                 {link.sublinks.map((mysublinks)=>(
                                         <div  >
                                            
@@ -46,7 +46,7 @@ const Navlinks = () => {
                 )}
             </div>
             {/*-------mobile menu------*/}
-            <div >
+            <div className='bg-white'>
                 {link.sublinks.map((slinks) => (
                     <div>
                     <div className={`

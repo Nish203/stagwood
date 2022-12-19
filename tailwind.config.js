@@ -6,11 +6,9 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        primary: "#4A3AFF",
+        primary: "#92400e",
       },
-      backgroundImage: {
-        Hero: "url('images/bg3.jpg')",
-      },
+      
     },
   },
   plugins: [],

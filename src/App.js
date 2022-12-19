@@ -9,9 +9,10 @@ import {
 } from "react-router-dom";
 
 
+
 function App() {
   return (
-    <section className="h-screen bg-Hero bg-cover font-[Poppins] md:bg-top bg-center">
+    <section className="h-screen  font-[Poppins] md:bg-top bg-center">
         <Router>
        <Navbar/>
       

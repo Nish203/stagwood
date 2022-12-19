@@ -1,81 +1,92 @@
-import React, { useState } from "react";
-//import React from 'react'
-import login from "../images/login.jpg";
-export default function Login() {
-  const [formData, setFormData] = useState({ 
-    user: {
-      username: "", 
-      password: "" 
-    },
-  });
+import React from 'react'
+//import login from '../images/login.jpg.jpeg'
+import logo from '../images/logo.jpeg'
+//import Google from '../images/google.png'
 
-  const handleChange = (e) => {
-    setFormData({
-      user: {
-        ...formData.user,
-        [e.target.name]: e.target.value,
-      },
-    });
-  };
+//@ts-ignore
 
+
+
+
+const Login = () => {
   return (
-    <div className="grid grid-cols-2 gap-4">
-        <div>
-        <img src={login} alt="Image"/>
+    <div className="w-full h-screen flex items-start">
+        <div className="relative w-1/2 h-full flex flex-col">
+          <div className='absolute top-[20%] left-[10%] flex flex-col' >        
+            <h1 className='text-4xl text-white font-bold my-4'> Turn your Ideas into reality</h1>
+            <p className='text-xl text-white font-normal'> Start for free and get attractive offers from the comunity</p>
+          </div>
+        <div className='md:block hidden'>
+            <img src ={login} className="w-full h-full object-cover"/>
         </div>
-    <figure className="h-screen flex bg-gray-100">
-      <div className="max-w-md m-auto bg-white rounded-lg border border-primaryBorder shadow-default py-10 px-1">
-        <blockquote className="text-2xl font-medium text-center">
-          <p className="text-lg font-semibold">Welcome </p>
-        </blockquote>
-        
-        <div className="text-primary m-6">
-      <div className="flex items-center mt-3 justify-center">
-        <h1 className="text-2xl font-medium text-primary mt-4 mb-2">
-          Login to your account
-        </h1>
-      </div>
-      <form>
-        <input
-          name="username"
-          type="text"
-          value={formData.user.username}
-          onChange={handleChange}
-          placeholder="Username"
-          className={
-            "w-full p-2 text-center text-primary border rounded-md outline-none text-sm transition duration-150 ease-in-out mb-4"
-          }
-        />
-        <input
-          name="password"
-          type="password" 
-          value={formData.user.password}
-          onChange={handleChange}
+             
+         </div>
+
+      <div className='w-1/2 h-full bg-[#f5f5f5] flex flex-col p-20 justify-between items-center'>
+        <h1 className='w-full max-w-[500px] mx auto text-xl text-[#060606] font-semibold mr auto'>Stag wood</h1>
+
+        <div className='w-full flex flex-col '>
+          <div className='w-full flex flex-col mb-2'>
+          <h3 className='text-3xl font-semibold mb-2'>Login</h3>
+          <p className='text-sm mb-2'>Welcome Back! Please enter your details.</p>
+        </div>
+
+        <div className='w-full flex flex-col'>
+          <input
+          type="email"
+          placeholder="Email"
+          className='w-full text-black py-2 my-2 bg-transparent border-b border-black outline-none focus:outline-none'/>
+
+<input
+          type="password"
           placeholder="Password"
-          className={
-            "w-full p-2 text-center text-primary border rounded-md outline-none text-sm transition duration-150 ease-in-out mb-4"
-          }
-        />
-        <div className="flex items-center mt-3 justify-center">
-          <button
-            className={
-              "bg-blue-700 hover:bg-blue-500 py-2 px-4 text-md text-white rounded border border-blue focus:outline-none focus:border-black"
-            }
-            value="Login"
-          >
-            Login
-          </button>
+          className='w-full text-black py-2 my-2 bg-transparent border-b border-black outline-none focus:outline-none'/>
         </div>
-      </form>
-      <div className="flex items-center mt-3 justify-center">
-      <button className={"justify-center text-blue-500 hover:underline"}>
-        Dont have a account?? Register Here
-      </button>
+
+        <div className='w-full flex items-center justify-between'>
+        <div className='w-full flex items-center'> 
+         <input type="checkbox" className="w-4 h-4 mr-2"/>
+         <p className='text-sm'>Remember Me</p>
+  
+  </div>
+  <p className='text-sm font-medium whitespace-nowrap cursor-pointer underline underline-offset-2'>Forgot Password?</p> 
+
+        </div>
+
+        <div className='w-full flex flex-col my-4'>
+          <button className='w-full text-white my-2 font-semibold bg-[#060606] rounded-md p-4 text-center flex items-center justify-center cursor-pointer'>
+          Log in
+          </button>
+          <button className='w-full text-[#060606] my-2 font semibold bg-white border-2 border-black rounded-md p-4 text-center flex items-center justify-center cursor-pointer'>
+          Register
+          </button>
+
+
+        </div>
+
+        <div className='w-full flex items-center justify-center relative py-2'>
+          <div className='w-full h-[1px] bg-black/40'></div>
+          <p className=' text-lg absolute text-black/80 bg-[#f5f5f5]'>or</p>
+
+        </div>
+
+        <div className='w-full text-[#060606] my-2 font semibold bg-white border-2 border-black/40 rounded-md p-4 text-center flex items-center justify-center cursor-pointer'>
+        <img src={Google} className="h-6 mr-2"></img>  Sign In with Google 
+          </div>
+
+
+        <div className='w-full  flex items-center justify-center'>
+        <p className='text-sm font-normal text-[#060606]'>Dont have a account?<span className='font-semibold underline underline-offs'></span></p>
       </div>
-    </div>
       </div>
-    </figure>
+      </div>
+
+      
+      
+
     </div>
 
-  );
+)
 }
+
+export default Login;

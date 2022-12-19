@@ -1,7 +1,6 @@
 import React from 'react'
 import img1 from '../images/img1.jpg'
 import img2 from '../images/img2.jpg'
-
 import img4 from '../images/img4.jpg'
 
 const Categories = () => {
