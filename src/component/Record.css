@@ -1,0 +1,38 @@
+.voicemodal{
+    position: absolute;
+    z-index: 111111;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+}
+.voicemodal .voice-search{
+    height: 300px ;
+}
+.voicemodal .micIcon{
+    width: 80px;
+    height: 80px;
+    font-size: 2.5rem;
+    margin : 0 auto;
+    position: relative;
+    padding:17px;
+    z-index: 1;
+}
+
+
+.fa{
+    margin: 0 auto;
+    display: block;
+}
+.col-md-2{
+    
+    background-color: rgba(204, 119, 100, 0.333);
+    border-radius: 50%;
+    
+}
+h3{
+    margin-left: 8px;
+}
+.fa-times{
+    margin-left: 320px;
+}
