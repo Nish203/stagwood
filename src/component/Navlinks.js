@@ -23,7 +23,7 @@ const Navlinks = () => {
                 </h1>
                 {link.submenu && (
                     <div >
-                        <div className='absolute top-14 hidden group-hover:md:block md:hover-block '>
+                        <div className='absolute top-24 hidden group-hover:md:block md:hover-block '>
                             <div className='py-3'>
                                 <div className='w-4 h-4 left-3 absolute mt-1 bg-slate-50 rotate-45  '></div>
                             </div>
