@@ -2,28 +2,29 @@
 import './App.css';
 import Navbar from './component/Navbar';
 
-import {
-  BrowserRouter as Router,
-  Switch,
-  Link
-} from "react-router-dom";
+import { BrowserRouter as Router,Routes, Route, Link } from 'react-router-dom';
 
-
+import Addtocard from "./component/Addtocard";
+import Login1 from "./component/Login1";
 
 function App() {
   return (
-    <section className="h-screen  font-[Poppins] md:bg-top bg-center">
+
         <Router>
+          <div className='App'>
        <Navbar/>
-      
        
-         <Switch>
-               
-         </Switch>
-         
+       <Routes>
+
+            <Route exact path="/" element={Navbar} />  
+            <Route path="/Addtocard" element={<Addtocard/>} />
+            <Route path="/Login1" element={<Login1/>} />
+            
+       </Routes>
+
+       </div>
        </Router>
       
-       </section>
        
   );
 }

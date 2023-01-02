@@ -12,8 +12,6 @@ import Reviewslide from './Reviewslide'
 import Bnav from './Bnav'
 import Footer from './Footer'
 
-
-
 // import ship from '../images/24-hours-support.png'
 // import secure from '../images/credit-card.png'
 // import exchange from '../images/delivery-status.png'
@@ -69,13 +67,13 @@ const Navbar = () => {
                 <Link>
                     <IoSearchOutline size={27} className=' mr-2  '/>
                 </Link>
-                <Link>
+                <Link to="/Login1">
                     <IoPersonOutline size={24} className='mr-2 '/>
                 </Link>
                 <Link>
                     <IoHeartOutline size={27} className='mr-2'/>
                 </Link>
-                <Link>
+                <Link to="/Addtocard">
                     <IoBagHandleOutline size={25} className='mr-2'/>
                 </Link> 
             </div>
