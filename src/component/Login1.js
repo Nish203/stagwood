@@ -1,6 +1,9 @@
 import React from 'react'
 import img1 from '../images/login1.jpeg'
 import {VscEye} from 'react-icons/vsc'
+import { Link } from '@material-ui/core'
+import FormValidator from './Rvalide';
+import React,{Component} from 'react';
 
 function Login1() {
   return (
@@ -14,9 +17,9 @@ function Login1() {
       <p class="text-xs mt-4 text-[#7f5539]">If you are already a member, easily log in</p>
 
       <form action="" class="flex flex-col gap-4">
-        <input class="p-2 mt-8 rounded-xl border text-black" type="email" name="email" placeholder="Email"/>
+        <input class="p-2 mt-8 rounded-xl border text-black" type="email" name="email" placeholder="Email" required/>
         <div class="relative">
-          <input class="p-2 rounded-xl border w-full text-black" type="password" name="password" placeholder="Password"/>
+          <input class="p-2 rounded-xl border w-full text-black" type="password" name="password" placeholder="Password" required/>
           <VscEye class="bi bi-eye absolute top-1/2 right-3 -translate-y-1/2" />
         </div>
         <button class="bg-[#7f5539] rounded-xl text-white py-2 hover:scale-105 duration-300">Login</button>
@@ -39,12 +42,13 @@ function Login1() {
       </button>
 
       <div class="mt-5 text-xs border-b border-[#7f5539] py-4 text-[#7f5539]">
-        <a href="#">Forgot your password?</a>
+        <Link to="/resetpw">Forgot your password ?</Link>
       </div>
 
       <div class="mt-3 text-xs flex justify-between items-center text-[#7f5539]">
         <p>Don't have an account?</p>
-        <button class="py-2 px-5 bg-white border rounded-xl hover:scale-110 duration-300">Register</button>
+        <Link to="/register"><button class="py-2 px-5 bg-white border rounded-xl hover:scale-110 duration-300" to="/register">Register</button></Link>
+        
       </div>
     </div>
 
