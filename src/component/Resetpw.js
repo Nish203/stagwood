@@ -14,7 +14,7 @@ function Resetpw() {
 
       <form action="" class="flex flex-col gap-4">
      
-        <input class="p-2  mt-1 mb-4 rounded-xl border" type="email" name="email" placeholder="Email"/>
+        <input class="p-2  mt-1 mb-4 rounded-xl border" type="email" name="email" placeholder="Email" required/>
        
         <button class="bg-[#7f5539] rounded-xl text-white py-2 hover:scale-105 duration-300">Reset Password</button>
       </form>
@@ -23,7 +23,7 @@ function Resetpw() {
 
     
     <div class="md:block hidden w-1/2">
-    <img src={img1} ></img>
+    <img src={img1}/ >
 
     </div>
   </div>

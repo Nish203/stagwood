@@ -1,7 +1,7 @@
 
 import React, { useState } from 'react'
 import {IoLocationOutline,IoPersonOutline,IoStorefrontOutline,IoBagHandleOutline,IoHeartOutline,IoSearchOutline} from 'react-icons/io5'
-import { Link } from 'react-router-dom'
+import { Link } from 'react-router-dom';
 import Navlinks from './Navlinks'
 
 import Explore from './Explore'
@@ -10,6 +10,7 @@ import Trending from './Trending'
 import Help from './Help'
 import Reviewslide from './Reviewslide'
 import Bnav from './Bnav'
+
 import Footer from './Footer'
 
 // import ship from '../images/24-hours-support.png'
@@ -71,7 +72,11 @@ const Navbar = () => {
                 <Link>
                     <IoSearchOutline size={27} className=' mr-2  '/>
                 </Link>
+<<<<<<< HEAD
                 <Link to="/">
+=======
+                <Link to="/Register1">
+>>>>>>> e9bc37723a4b88728b928f6608bfdfee66e4ac64
                     <IoPersonOutline size={24} className='mr-2 '/>
                 </Link>
                 <Link>
