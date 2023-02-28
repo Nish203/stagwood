@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 
-import img1 from '../images/home_21.jpeg'
+import img1 from '../images/website/chair/chair__5.webp'
 import {BsHandbagFill, BsFillSuitHeartFill} from 'react-icons/bs'
 
 function Productdetail() {
@@ -104,7 +104,8 @@ function Productdetail() {
   <p className='text-base text-gray-400 line-through'>₹ 40000</p>
 </div>
 <p className='mt-4 text-gray-600 mr-6 text-left'>
-The frame of a sofa is made most often wood, though newer options include steel, plastic, and laminated boards or a combination of the above
+The frame of a sofa is made most often wood, though newer options include
+ steel, plastic, and laminated boards or a combination of the above
 </p>
 {/* size filter */}
 

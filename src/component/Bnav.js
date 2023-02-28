@@ -26,10 +26,11 @@ const Bnav = () =>
           activeIcon: <IoHeartOutline style={{ fontSize: '18px' }} />
         },
         {
+         
           title: 'Bag',
           icon: <IoBagHandleOutline style={{ fontSize: '18px' }} />,
           activeIcon: <IoBagHandleOutline style={{ fontSize: '18px', color: '#fff' }} />,
-         
+          Link:  <Link to="/Addtocart"> <IoBagHandleOutline/> </Link>
         }
       ]
 
@@ -39,9 +40,9 @@ const Bnav = () =>
       items={bottomNavItems}
       defaultSelected={0}
       onItemClick={(item) => console.log(item)}
-
+     
     />
-    <Link> <IoBagHandleOutline/> </Link>
+  
 </div>
   )
 }

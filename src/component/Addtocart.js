@@ -32,7 +32,7 @@ export default function Example() {
 
   return (
     <Transition.Root show={open} as={Fragment}>
-      <Dialog as="div" className="relative z-10" onClose={setOpen}>
+      <Dialog as="div" className="relative" onClose={setOpen}>
         <Transition.Child
           as={Fragment}
           enter="ease-in-out duration-500"
@@ -65,6 +65,9 @@ export default function Example() {
                         <div className="ml-3 flex h-7 items-center">
                           <button
                             type="button"
+
+
+      
                             className="-m-2 p-2 text-gray-400 hover:text-gray-500"
                             onClick={() => setOpen(false)}
                           >

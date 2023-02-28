@@ -4,14 +4,14 @@ import img1 from '../images/website/sofa/img__5.webp'
 import img from '../images/website/bed/bed__3.webp'
 import img2 from '../images/website/cabinate/cabinate__22.webp'
 import img3 from '../images/website/chair/chair__13.webp'
-
+import { Link } from 'react-router-dom'
 
 const Help = () => {
   return (
   
-<div class="bg-white mb-1">
-  <div class="mx-auto max-w-2xl py-10 px-4 sm:py-24 sm:px-6 lg:max-w-7xl lg:px-8">
-    <h2 class="text-3xl  text-gray-900"> Need Buying Guides? </h2>
+<div class="bg-white ">
+  <div class="mx-auto max-w-2xl mb-20 sm:py- sm:px-6 lg:max-w-7xl lg:px-8">
+    <h2 class="text-3xl  text-gray-900  "> Need Buying Guides? </h2>
 
     <div class="mt-14 grid grid-cols-1 gap-y-10 gap-x-6 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8">
 
@@ -21,11 +21,11 @@ const Help = () => {
         </div>
         <div class="mt-4 flex justify-between">
           <div>
-            <h3 class="text-1xl text-black">
-              <a href="#">
+            <h3 class="text-lg text-black">
+              <Link>
                 <span aria-hidden="true" class="absolute inset-0"></span>
                Here How To Choose The Right Sofa
-              </a>
+              </Link>
             </h3>
            
           </div>
@@ -39,11 +39,11 @@ const Help = () => {
         </div>
         <div class="mt-4 flex justify-between">
           <div>
-            <h3 class="text-1xl text-black">
-              <a href="#">
+            <h3 class="text-lg text-black">
+              <Link>
                 <span aria-hidden="true" class="absolute inset-0"></span>
                 How To Buy A Perfect Bed For Your Room
-              </a>
+              </Link>
             </h3>
            
           </div>
@@ -57,11 +57,11 @@ const Help = () => {
         </div>
         <div class="mt-4 flex justify-between">
           <div>
-            <h3 class="text-1xl text-black">
-              <a href="#">
+            <h3 class="text-lg text-black">
+              <Link>
                 <span aria-hidden="true" class="absolute inset-0"></span>
                 Everything About Cabinets And Table
-              </a>
+              </Link>
             </h3>
            
           </div>
@@ -75,11 +75,11 @@ const Help = () => {
         </div>
         <div class="mt-4 flex justify-between">
           <div>
-            <h3 class="text-1xl text-black">
-              <a href="#">
+            <h3 class="text-lg text-black">
+              <Link>
                 <span aria-hidden="true" class="absolute inset-0"></span>
                 What To Look For While Buying A Chair
-              </a>
+              </Link>
             </h3>
            
           </div>

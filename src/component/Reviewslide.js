@@ -1,6 +1,6 @@
 import React from 'react'
 import {FaQuoteLeft} from 'react-icons/fa'
-import {AiOutlineStar} from 'react-icons/ai'
+import {AiFillStar} from 'react-icons/ai'
 
 
 const Reviewslide = () => {
@@ -19,7 +19,7 @@ const Reviewslide = () => {
     <div class="  mb-12 md:mb-0">
       
       <h5 class="text-xl font-semibold mb-4">Maria Smantha</h5>
-      <h6 class="font-semibold text-blue-600 mb-4">Web Developer</h6>
+      <h6 class="font-semibold text-primary mb-4">Web Developer</h6>
       <p class="mb-4">
        <FaQuoteLeft class="w-6 pr-2 inline-block"/>
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod eos id officiis hic
@@ -27,26 +27,26 @@ const Reviewslide = () => {
       </p>
       <ul class="flex justify-center mb-0">
         <li>
-        <AiOutlineStar size={20} class=" text-yellow-500"/>
+        <AiFillStar size={20} class=" text-yellow-500"/>
         </li>
         <li>
-        <AiOutlineStar size={20} class=" text-yellow-500"/>
+        <AiFillStar size={20} class=" text-yellow-500"/>
         </li>
         <li>
-        <AiOutlineStar size={20} class=" text-yellow-500"/>
+        <AiFillStar size={20} class=" text-yellow-500"/>
         </li>
         <li>
-        <AiOutlineStar size={20} class=" text-yellow-500"/>
+        <AiFillStar size={20} class=" text-yellow-500"/>
         </li>
         <li>
-        <AiOutlineStar size={20} class=" text-yellow-500"/>
+        <AiFillStar size={20} class=" text-yellow-500"/>
         </li>
       </ul>
     </div>
     <div class="   mb-12 md:mb-0">
       
       <h5 class="text-xl font-semibold mb-4">Lisa Cudrow</h5>
-      <h6 class="font-semibold text-blue-600 mb-4">Graphic Designer</h6>
+      <h6 class="font-semibold text-primary mb-4">Graphic Designer</h6>
       <p class="mb-4">
       <FaQuoteLeft class="w-6 pr-2 inline-block"/>
         Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit
@@ -54,26 +54,26 @@ const Reviewslide = () => {
       </p>
       <ul class="flex justify-center mb-0">
         <li>
-        <AiOutlineStar size={20} class=" text-yellow-500"/>
+        <AiFillStar size={20} class=" text-yellow-500"/>
         </li>
         <li>
-        <AiOutlineStar size={20} class=" text-yellow-500"/>
+        <AiFillStar size={20} class=" text-yellow-500"/>
         </li>
         <li>
-        <AiOutlineStar size={20} class=" text-yellow-500"/>
+        <AiFillStar size={20} class=" text-yellow-500"/>
         </li>
         <li>
-        <AiOutlineStar size={20} class=" text-yellow-500"/>
+        <AiFillStar size={20} class=" text-yellow-500"/>
         </li>
         <li>
-        <AiOutlineStar size={20} class=" text-yellow-500"/>
+        <AiFillStar size={20} class=" text-yellow-500"/>
         </li>
       </ul>
     </div>
     <div class="  mb-0">
       
       <h5 class="text-xl font-semibold mb-4">John Smith</h5>
-      <h6 class="font-semibold text-blue-600 mb-4">Marketing Specialist</h6>
+      <h6 class="font-semibold text-primary mb-4">Marketing Specialist</h6>
       <p class="mb-4">
       <FaQuoteLeft class="w-6 pr-2 inline-block"/>
         At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis
@@ -81,19 +81,19 @@ const Reviewslide = () => {
       </p>
       <ul class="flex justify-center mb-0">
         <li>
-        <AiOutlineStar size={20} class=" text-yellow-500"/>
+        <AiFillStar size={20} class=" text-yellow-500"/>
         </li>
         <li>
-        <AiOutlineStar size={20} class=" text-yellow-500"/>
+        <AiFillStar size={20} class=" text-yellow-500"/>
         </li>
         <li>
-        <AiOutlineStar size={20} class=" text-yellow-500"/>
+        <AiFillStar size={20} class=" text-yellow-500"/>
         </li>
         <li>
-        <AiOutlineStar size={20} class=" text-yellow-500"/>
+        <AiFillStar size={20} class=" text-yellow-500"/>
         </li>
         <li>
-        <AiOutlineStar size={20} class=" text-yellow-500"/>
+        <AiFillStar size={20} class=" text-yellow-500"/>
         </li>
       </ul>
     </div>

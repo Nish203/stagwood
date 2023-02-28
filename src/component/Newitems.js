@@ -28,11 +28,11 @@ const Button = () => {
 
           {/* text */}
 
-          <div className=' mt-16 flex md:flex-col items-baseline gap-x-6 mb-6 lg:mb-0'>
+          <div className=' mt-16 flex md:flex-col items-baseline gap-x-6 mb-6 lg:mb-0 '>
             <h2 className='text-4xl ml-10 border-b border-primary title max-w-[245px] lg:mt-[30px] lg:mb-11'>
                 New In Store
             </h2>
-            <p className=' max-w-[245px] lg:mb-12 '> Get the latest items immediately with promo prices </p>
+            <p className=' max-w-[245px] lg:mb-12  text-center md:text-left space-y-2'> Get the latest items immediately with promo prices </p>
             <div className='hidden lg:flex items-center'>
               <a
                 className='hover:border-b border-primary lg:items-center font-medium transition-all'
