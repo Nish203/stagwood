@@ -26,155 +26,60 @@ function Productdetail() {
      
     
     <div className=''>
-    <div className="container md:grid grid-cols-2  mt-16 ml-16 overflow-hidden">
+    <div className="container  overflow-hidden md:grid grid-cols-2  mt-16 ml-16">
 {/* product image */}
         <div>
-             <img src={img1} className='w-11/12'></img><br />
-        
-        <div className="grid grid-cols-4 mr-3">
-            <img src={img1} className='w-36 cursor-pointer border border-primary' />
-          
-            <img src={img1} className='w-36 cursor-pointer border  border-primary'/>
-            
-            <img src={img1} className='w-36 cursor-pointer border border-primary' />
-            <img src={img1} className='w-36 cursor-pointer border border-primary' />
-        </div>
-        </div>
-
-
-        
+             <img src={img1} className='w-auto h-auto'></img><br />
+        </div>    
         
     {/* product content */}
  
-    <div className='mr-2'>
-<h2 className='text-3xl font-medium uppercase flex items-center mb-4'> Stag wood</h2>
-<div className='flex items-center mb-4'>
-<ul class="flex justify-center">
-  <li>
-    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="star" class="w-4 text-yellow-500 mr-1" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
-      <path fill="currentColor" d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"></path>
-    </svg>
-  </li>
-  <li>
-    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="star" class="w-4 text-yellow-500 mr-1" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
-      <path fill="currentColor" d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"></path>
-    </svg>
-  </li>
-  <li>
-    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="star" class="w-4 text-yellow-500 mr-1" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
-      <path fill="currentColor" d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"></path>
-    </svg>
-  </li>
-  <li>
-    <svg aria-hidden="true" focusable="false" data-prefix="far" data-icon="star" class="w-4 text-yellow-500 mr-1" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
-      <path fill="currentColor" d="M528.1 171.5L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6zM388.6 312.3l23.7 138.4L288 385.4l-124.3 65.3 23.7-138.4-100.6-98 139-20.2 62.2-126 62.2 126 139 20.2-100.6 98z"></path>
-    </svg>
-  </li>
-  <li>
-    <svg aria-hidden="true" focusable="false" data-prefix="far" data-icon="star" class="w-4 text-yellow-500" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
-      <path fill="currentColor" d="M528.1 171.5L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6zM388.6 312.3l23.7 138.4L288 385.4l-124.3 65.3 23.7-138.4-100.6-98 139-20.2 62.2-126 62.2 126 139 20.2-100.6 98z"></path>
-    </svg>
-  </li>
-</ul>
-<div className='text-xs text-gray-500 ml-3'>(150 Reviews)  
-
-</div>
-</div>
+    <div className=''>
+<h2 className='text-3xl font-medium uppercase flex items-center mb-4'> Product Name </h2>
 <div className='space-y-2'>
 <p className='text-gray-800 font-semibold space-x-2 flex items-center mb-4'>
   <span> Availability:</span>
   <span className='text-green-600'> In Stock</span>
 </p>
-<p className='text-gray-800 font-semibold space-x-2 flex items-center mb-4'>
-  <span className='text-gray-800 font-semibold'> Brand:</span>
-  <span className='text-gray-600'> Apex</span>
-</p>
+
 <p className='text-gray-800 font-semibold space-x-2 flex items-center mb-4'>
   <span className='text-gray-800 font-semibold'> Category:</span>
   <span className='text-gray-600'> Sofa</span>
 </p>
 <p className='text-gray-800 font-semibold space-x-2 flex items-center mb-4'>
-  <span className='text-gray-800 font-semibold'> SKU:</span>
-  <span className='text-gray-600'> BE45VGRT</span>
+  <span className='text-gray-800 font-semibold'> Material:</span>
+  <span className='text-gray-600'> Teak wood </span>
 </p>
-
+<p className='text-gray-800 font-semibold space-x-2 flex items-center mb-4'>
+  <span className='text-gray-800 font-semibold'> Size :</span>
+  <span className='text-gray-600'> 24 x 11 x 21 inch</span>
+</p>
+<p className='text-gray-800 font-semibold space-x-2 flex items-center mb-4'>
+  <span className='text-gray-800 font-semibold'> Ship by:</span>
+  <span className='text-gray-600'> 5 to 8 Day </span>
+</p>
 </div>
 <div className='sm flex items-baseline mb-1 space-x-2 font-roboto mt-4'>
   <p className='text-2xl text-primary font-semibold'>₹ 35000</p>
   <p className='text-base text-gray-400 line-through'>₹ 40000</p>
 </div>
-<p className='mt-4 text-gray-600 mr-6 text-left'>
-The frame of a sofa is made most often wood, though newer options include
- steel, plastic, and laminated boards or a combination of the above
-</p>
-{/* size filter */}
-
-{/* <div className='pt-4'>
-    <h3 className='text-sm text-gray-800 uppercase flex items-center mb-4'>Size</h3>
-    <div className='flex items-center gap-2'>
-      <div className='size-selector'>
-      
-        <input type="radio" name="size" class="hidden " id="size-xs"/>
-        <label for="size-xs" class="text-s border border-gray-200  rounded-sm h-6 w-6 cursor-pointer shadow-sm block" >
-          
-         XS
-         
-        </label>
-        
-      </div>
-
-      <div className='size-selector'>
-        <input type="radio" name="size" class="hidden" id="size-s"/>
-        <label for="size-s" class="text-s border border-gray-200 rounded-sm h-6 w-6 cursor-pointer shadow-sm block" >
-          S
-        </label>
-      </div>
-
-      <div className='size-selector'>
-        <input type="radio" name="size" class="hidden" id="size-m"/>
-        <label for="size-m" class="text-s border border-gray-200 rounded-sm h-6 w-6 cursor-pointer shadow-sm block" >
-          M
-        </label>
-      </div>
-
-      <div className='size-selector'>
-        <input type="radio" name="size" class="hidden" id="size-l"/>
-        <label for="size-l" class="text-s border border-gray-200 rounded-sm h-6 w-6 cursor-pointer shadow-sm block" >
-        L
-        </label>
-      </div>
-
-      <div className='size-selector'>
-        <input type="radio" name="size" class="hidden" id="size-xl"/>
-        <label for="size-xl" class="text-s border border-gray-200 rounded-sm h-6 w-6  flex items-center justify-center cursor-pointer shadow-sm  text-gray-600" >
-          XL
-        </label>
-      </div>
-
-    </div>
-</div> */}
-{/* color filter */}
-
-    {/* singal color */}
-    <div className='color-selector'>
-      <input type="radio" name="color" className='hidden' id="color-white" />
-      
-    
-    </div>
-
+  <p className='mt-4 text-gray-600 mr-6 text-left'>
+  The frame of a sofa is made most often wood, though newer options include
+  steel, plastic, and laminated boards or a combination of the above
+  </p>
      {/* quantity start */}
-     <div className='mt-4'>
-      <h3 className='text-sm text-gray-800 uppercase flex items-center mb-4 '>Quantity</h3>
-      <div className=' flex border border-gray-300 text-gray-600 divide-x divide-gray-300 w-max'>
+     <div className='mt-4 '>
+     <span className='text-gray-800 font-semibold '> Quantity</span>
+      <div className=' mt-5 flex border border-gray-300 text-gray-600 divide-x divide-gray-300 w-max'>
         <div className='h-8 w-8 text-xl flex items-center justify-center cursor-pointer select-none'>
           
           <button type='button' onClick={decNum}>-</button>
          
          </div>
-        <div className='h-8 w-8 text-base  items-center justify-center'>
-          <input type="text" className='form-control h-8 w-8 items-center justify-center ml-3' value={num} onChange={handleChange} />
+        <div className='h-8 w-9 text-base  items-center justify-center'>
+          <input type="text" className='form-control h-8 w-9 items-center justify-center' value={num} onChange={handleChange} />
         </div>
-        <div className='h-8 w-8 text-xl flex items-center justify-center cursor-pointer select-none'>
+        <div className='h-8 w-9 text-xl flex items-center justify-center cursor-pointer select-none'>
         <button type='button' onClick={incNum}>+</button>
 
         </div>
@@ -199,49 +104,7 @@ The frame of a sofa is made most often wood, though newer options include
     </div>
     </div>
   </div>
-  {/* product detail */}
-  <div className='container pb-16 '>
-    <h3 className='border-b border-gray-200 font-roboto text-gray-800 pb-3 font-medium text-left ml-16 mt-6 '>
-      
-      Productdetail
-
-    </h3>
-    <div className='w-3/5 pt-6'>
-      <div className='text-gray-600 space-y-3'>
-        <p className='text-left ml-16'>
-        A sofa may be covered with any choice of synthetic, natural, or blended fabric. Wool and nylon are the best choices in their respective categories of natural and synthetic fibers, but cotton, acetate, rayon, and polyester have their own functional properties. Exterior fabric may be finished with a protective anti-stain coating.
-        </p>
-
-        <p className='text-left ml-16'>
-        A sofa may be covered with any choice of synthetic, natural, or blended fabric. Wool and nylon are the best choices in their respective categories of natural and synthetic fibers, but cotton, acetate, rayon, and polyester have their own functional properties. Exterior fabric may be finished with a protective anti-stain coating.
-        </p>
-
-        <p className='text-left ml-16'>
-        A sofa may be covered with any choice of synthetic, natural, or blended fabric. Wool and nylon are the best choices in their respective categories of natural and synthetic fibers, but cotton, acetate, rayon, and polyester have their own functional properties. Exterior fabric may be finished with a protective anti-stain coating.
-        </p>
-
-       </div>
-       {/* table */}
-       <table className='ml-16 table-auto border-collapse w-full text-left text-gray-600 text-sm mt-6'>
-        <tr>
-          <th className='py-2 px-4 border border-gray-300 w-40 font-medium'>Color</th>
-          <td className=' px-5 px-border border border-gray-300'>Black,Brown,Red</td>
-        </tr>
-
-        <tr>
-          <th className='py-2 px-4 border border-gray-300 w-40 font-medium'>Material</th>
-          <td className='px-5 px-border border border-gray-300'>Artificial Leather</td>
-        </tr>
-
-        <tr>
-          <th className='py-2 px-4 border border-gray-300 w-40 font-medium'>Weight</th>
-          <td className='px-5 px-border border border-gray-300'>55 Kg</td>
-        </tr>
-
-       </table>
-
-    </div>
-  </div>
+  
   
 </div>
 

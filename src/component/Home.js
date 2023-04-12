@@ -1,6 +1,5 @@
 
 import React, { useState,  useEffect } from 'react'
-import {IoLocationOutline,IoPersonOutline,IoStorefrontOutline,IoBagHandleOutline,IoHeartOutline,IoSearchOutline} from 'react-icons/io5'
 import { Link } from 'react-router-dom'
 import Navbar from './Navbar'
 import Navlinks from './Navlinks'
@@ -15,10 +14,7 @@ import Footer from './Footer'
 import { useNavigate } from 'react-router-dom';
 import { ToastContainer, toast } from 'react-toastify';
 
-// import ship from '../images/24-hours-support.png'
-//  import secure from '../images/credit-card.png'
-//  import exchange from '../images/delivery-status.png'
-   
+
 const Home = () => {
 
     const history = useNavigate();
@@ -60,7 +56,7 @@ const Home = () => {
   return (
 <div className='w-full '>
 <Navbar/>
-    <div class="bg-[url('./images/back.jpg')] bg-cover ">
+    <div class="bg-[url('./images/back.jpg')] bg-cover " >
         
       
         <div className='px-8 pb-40 pt-24  mx-auto max-w-6xl '>
@@ -85,32 +81,6 @@ const Home = () => {
     <Trending/>
     <Help/>
     <Reviewslide/>
-
-     {/* <div className="2xl:container 2xl:mx-auto md:py-20 ">
-            <div className="  bg-gradient-to-b from-[#fae2c2] to-white grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 lg:gap-8 md:gap-12 gap-14 lg:px-20 lg:py-12 py-10 md:px-12 px-4">
-
-                <div>
-                    <img src={ship} className="h-9 w-9 "></img>
-                    <h3 className=" text-xl leading-5 font-semibold text-gray-800 lg:mt-10 mt-8 "> CUSTOMER SUPPORT </h3>
-                    <p className=" text-base leading-6 font-normal text-gray-700 mt-4 lg:w-full md:w-9/12 w-full">
-                        Our customer care is available 24/7 at <span className=" font-semibold cursor-pointer">+495-589-509</span> and <span className=" font-semibold cursor-pointer">customercare@gmail.com</span>
-                    </p>
-                </div>
-
-                <div>
-                    <img src={secure} className="h-9 w-9 "></img>
-                    <h3 className=" text-xl leading-5 font-semibold text-gray-800 lg:mt-10 mt-8 ">SECURE PAYMENTS </h3>
-                    <p className=" text-base leading-6 font-normal text-gray-700 mt-4 lg:w-full md:w-9/12 w-full">All out products are 100 percent recycable</p>
-                </div>
-
-                <div>
-                     <img src={exchange} className="h-9 w-9 "></img>
-                    <h3 className=" text-xl leading-5 font-semibold text-gray-800 lg:mt-10 mt-8 ">SIMPLE RETUENS </h3>
-                    <p className=" text-base leading-6 font-normal text-gray-700 mt-4 lg:w-full md:w-9/12 w-full">If you don't like it, trade it to one of your friends for something of theirs. Don't send it here though.</p>
-                </div>
-            </div>
-        </div>  */}
-
     <Bnav/>
     <Footer/>
     </div>

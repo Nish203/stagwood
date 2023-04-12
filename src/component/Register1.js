@@ -2,22 +2,12 @@ import img1 from '../images/reg.webp'
 //import {VscEye} from 'react-icons/vsc'
 
 import React,{Component} from 'react';
-<<<<<<< HEAD
 import FormValidator from './Rvalid';
 import axios from 'axios'
 
 class Register1 extends Component{
 
 
-=======
-import FormValidator from './Rvalide';
-
-
-
-
-class Register1 extends Component{
-
->>>>>>> e9bc37723a4b88728b928f6608bfdfee66e4ac64
   handlePasswordChange(e){
     this.setState({password:e.target.value});
   }
@@ -40,7 +30,6 @@ class Register1 extends Component{
   this.handlePasswordChange = this.handlePasswordChange.bind(this);
     this.toggleShow = this.toggleShow.bind(this);
   
-<<<<<<< HEAD
 
 
     this.state = {
@@ -55,9 +44,6 @@ class Register1 extends Component{
   
 
 
-=======
-        
->>>>>>> e9bc37723a4b88728b928f6608bfdfee66e4ac64
 this.validator = new FormValidator([{
 field: 'full_name',
 method: 'isEmpty',
@@ -117,7 +103,6 @@ this.setState({
 [event.target.name]: event.target.value,
 });
 }
-<<<<<<< HEAD
 handlesubmit(e) {
   e.preventDefault();
   const {full_name, email, phone, password, password_confirmation } = this.state;
@@ -144,8 +129,6 @@ handlesubmit(e) {
   });
 }
 
-=======
->>>>>>> e9bc37723a4b88728b928f6608bfdfee66e4ac64
 handleFormSubmit = event => {
   const validation = this.validator.validate(this.state);
   this.setState({
@@ -173,19 +156,11 @@ render() {
       <h2 class="font-bold text-2xl text-[#7f5539]">Register</h2>
       <p class="text-xs mt-4 text-[#7f5539]">Welcome..! Enter your Detail</p>
 
-<<<<<<< HEAD
       <form  onSubmit={this.handlesubmit}className="registrationForm" class="flex flex-col gap-5">
 
 <div className={validation.email.isInvalid && 'has-error'} class="relative mt-4">
 
 <input type="string" className="p-2 rounded-xl border w-full" name="full_name" placeholder="Full Name" onClick={this.handleInputChange} onChange={ (e)=> this.setState({full_name: e.target.value})}/> 
-=======
-      <form className="registrationForm" class="flex flex-col gap-5">
-
-<div className={validation.email.isInvalid && 'has-error'} class="relative mt-4">
-
-<input type="string" className="p-2 rounded-xl border w-full" name="full_name" placeholder="Full Name" onChange={this.handleInputChange} /> 
->>>>>>> e9bc37723a4b88728b928f6608bfdfee66e4ac64
 
     <span className="help-block text-justify text-red-500">{validation.full_name.message}</span>
 
@@ -193,11 +168,7 @@ render() {
 
 <div className={validation.email.isInvalid && 'has-error'} class="relative">
 
-<<<<<<< HEAD
 <input type="email" className="p-2 rounded-xl border w-full" name="email" placeholder="Email address" onClick={this.handleInputChange} onChange={ (e)=> this.setState({email: e.target.value})} /> 
-=======
-<input type="email" className="p-2 rounded-xl border w-full" name="email" placeholder="Email address" onChange={this.handleInputChange} /> 
->>>>>>> e9bc37723a4b88728b928f6608bfdfee66e4ac64
 
     <span className="help-block text-red-500">{validation.email.message}</span>
 
@@ -205,11 +176,7 @@ render() {
 
 <div className={validation.phone.isInvalid && 'has-error'} class="relative">
 
-<<<<<<< HEAD
 <input type="phone" className="p-2 rounded-xl border w-full" name="phone" placeholder="Phone Number" onClick={this.handleInputChange} onChange={ (e)=> this.setState({phone: e.target.value})} /> 
-=======
-<input type="phone" className="p-2 rounded-xl border w-full" name="phone" placeholder="Phone Number" onChange={this.handleInputChange} /> 
->>>>>>> e9bc37723a4b88728b928f6608bfdfee66e4ac64
     <span className="help-block text-red-500">{validation.phone.message}</span> 
 
 </div>
@@ -217,11 +184,7 @@ render() {
 
 <div className={validation.password.isInvalid && 'has-error'} class="relative">
 
-<<<<<<< HEAD
 <input type="password" value={this.state.password} className="p-2 rounded-xl border w-full" placeholder="Password" name="password" onClick={this.handleInputChange} onChange={ (e)=> this.setState({password: e.target.value})} /> 
-=======
-<input type={this.state.hidden ? 'password' : 'text'} value={this.state.password} className="p-2 rounded-xl border w-full" placeholder="Password" name="password" onChange={this.handlePasswordChange} /> 
->>>>>>> e9bc37723a4b88728b928f6608bfdfee66e4ac64
 
     <span className="help-block text-red-500">{validation.password.message}</span> 
 
@@ -231,20 +194,10 @@ render() {
  
 <div className={validation.password_confirmation.isInvalid && 'has-error '} class="relative">
     
-<<<<<<< HEAD
     <input type="password"  value={this.state.password_confirmation} className="p-2 rounded-xl border w-full" placeholder="Confirm Password" name="password_confirmation" onClick={this.handleInputChange} onChange={ (e)=> this.setState({password_confirmation: e.target.value})} /> 
         <span className="help-block text-red-500">{validation.password_confirmation.message} </span> 
             {/* <VscEye class="bi bi-eye absolute top-1/2 right-3 -translate-y-1/2" onClick={this.toggleShow}/> */}
   </div>
-=======
-    <input type="password"  value={this.state.password_confirmation} className="p-2 rounded-xl border w-full" placeholder="Confirm Password" name="password_confirmation" onChange={this.handleInputChange} /> 
-        <span className="help-block text-red-500">{validation.password_confirmation.message}
-        
-        </span> 
-            {/* <VscEye class="bi bi-eye absolute top-1/2 right-3 -translate-y-1/2" onClick={this.toggleShow}/> */}
-
-</div>
->>>>>>> e9bc37723a4b88728b928f6608bfdfee66e4ac64
 
 
 

@@ -1,5 +1,6 @@
 import { Fragment, useState } from 'react'
 import { Dialog, Transition } from '@headlessui/react'
+import { NavLink ,useNavigate} from "react-router-dom"
 import { XMarkIcon } from '@heroicons/react/24/outline'
 
 const products = [
@@ -137,10 +138,12 @@ export default function Example() {
                       <div className="mt-6 flex justify-center text-center text-sm text-gray-500">
                         <p>
                           or
+                          <NavLink to="/addtocart ">Sign Up</NavLink> 
                           <button
                             type="button"
                             className="font-medium text-indigo-600 hover:text-indigo-500"
                             onClick={() => setOpen(false)}
+                            
                           >
                             Continue Shopping
                             <span aria-hidden="true"> &rarr;</span>
